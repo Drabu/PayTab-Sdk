@@ -1,0 +1,2 @@
+include ':app', ':paytab_dk', ':paytabs_sdk-v4.0.1'
+rootProject.name='PayTabsExmaple'

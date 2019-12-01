@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paytab_dk" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:supportsRtl="true" >
+        <activity
+            android:name="com.paytab_dk.paytabs_sdk.payment.ui.activities.PayTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PaytabsAppTheme.NoActionBar" />
+        <activity
+            android:name="com.paytab_dk.paytabs_sdk.payment.ui.activities.SecurePaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PaytabsAppTheme.NoActionBar" />
+    </application>
+
+</manifest>

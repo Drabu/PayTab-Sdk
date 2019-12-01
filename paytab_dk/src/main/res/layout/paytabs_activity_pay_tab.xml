@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".paytabs_sdk.payment.ui.activities.PayTabActivity">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <LinearLayout-->
+<!--            android:background="#000000"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Add Card"-->
+<!--                android:textSize="24dp"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="#000"
+        android:id="@+id/header"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/make_a_payment"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="60dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/paytabs_mbme_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginLeft="-155dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="-155dp"
+        android:visibility="gone"
+        android:background="@drawable/paytabs_mbme_bg"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>
